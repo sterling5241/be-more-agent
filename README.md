@@ -124,20 +124,20 @@ This software is a generic framework. You can give it a new personality by repla
 2.  **Sounds:** Put multiple `.wav` files in the `sounds/[category]/` folders. The robot will pick one at random each time (e.g., different "thinking" hums or "error" buzzes).
 
 ---
-
+```
 ## Set up Custom BMO Voice
 
 echo "Setting up custom BMO voice model..."
 
-### Create the voices directory if it doesn't already exist
+# Create the voices directory if it doesn't already exist
 mkdir -p voices
 
-### Download the custom model and its JSON configuration file
+# Download the custom model and its JSON configuration file
 curl -L -o voices/bmo-custom.onnx "https://github.com/brenpoly/be-more-agent/releases/latest/download/bmo-custom.onnx"
 curl -L -o voices/bmo-custom.onnx.json "https://github.com/brenpoly/be-more-agent/releases/latest/download/bmo-custom.onnx.json"
 
 echo "Custom voice model installed successfully in the /voices directory."
-
+```
 ---
 
 ## ⚠️ Troubleshooting
