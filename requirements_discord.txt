@@ -1,0 +1,13 @@
+# Original be-more-agent dependencies
+openwakeword
+pyaudio
+numpy
+requests
+duckduckgo-search
+Pillow
+ollama
+
+# Discord bot additions
+discord.py[voice]>=2.3.2
+PyNaCl
+aiohttp
