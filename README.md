@@ -176,3 +176,39 @@ This repository and the associated voice model are a non-commercial, open-source
 
 Voice Model Attribution
 The text-to-speech capabilities of this project are powered by Piper. The custom voice model was fine-tuned locally using Piper's base "Amy" model (en_US-amy-medium). The original Piper engine and base models are developed by the Rhasspy project and distributed under the MIT License.
+
+
+
+
+
+
+
+
+
+
+"""
+discord_bot.py  —  Be More Agent, Discord edition
+Drop into the root of the be-more-agent repo alongside agent.py.
+
+Extra pip installs (add to requirements.txt):
+    discord.py[voice]>=2.3.2
+    PyNaCl
+    aiohttp
+    duckduckgo-search
+
+Run:
+    export DISCORD_TOKEN=your_bot_token_here
+    source venv/bin/activate
+    python discord_bot.py
+
+Bot permissions needed (in Discord Developer Portal):
+    - Send Messages
+    - Embed Links
+    - Attach Files
+    - Read Message History
+    - Connect (voice)
+    - Speak (voice)
+    - Use Voice Activity
+    - Manage Messages (to pin the face embed)
+    Privileged intents: Message Content Intent
+"""
