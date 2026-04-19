@@ -4,7 +4,7 @@
 
 ```bash
 source venv/bin/activate
-pip install "discord.py[voice]" PyNaCl aiohttp --break-system-packages
+pip install "discord.py[voice]" PyNaCl aiohttp scipy --break-system-packages
 ```
 
 Also make sure `ffmpeg` is installed (needed for voice playback):
