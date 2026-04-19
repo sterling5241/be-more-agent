@@ -1,30 +1,3 @@
-"""
-discord_bot.py  —  Be More Agent, Discord edition
-Drop into the root of the be-more-agent repo alongside agent.py.
-
-Extra pip installs (add to requirements.txt):
-    discord.py[voice]>=2.3.2
-    PyNaCl
-    aiohttp
-    duckduckgo-search
-
-Run:
-    export DISCORD_TOKEN=your_bot_token_here
-    source venv/bin/activate
-    python discord_bot.py
-
-Bot permissions needed (in Discord Developer Portal):
-    - Send Messages
-    - Embed Links
-    - Attach Files
-    - Read Message History
-    - Connect (voice)
-    - Speak (voice)
-    - Use Voice Activity
-    - Manage Messages (to pin the face embed)
-    Privileged intents: Message Content Intent
-"""
-
 import asyncio
 import io
 import json
